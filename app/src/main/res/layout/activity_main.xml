@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--this part is for toolbar-->
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+            <include layout="@layout/home_page_toolbar" />
+        </RelativeLayout>
+
+        <!--this part is for midle screen-->
+
+        <RelativeLayout
+            android:id="@+id/relativelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="?actionBarSize"
+            android:layout_below="@+id/relativelayout1">
+
+            <include layout="@layout/middle_view_pagger_home_screen" />
+
+        </RelativeLayout>
+
+        <!--this part for bottom navigationbar-->
+
+        <include layout="@layout/bottom_navigation_home_screen" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
