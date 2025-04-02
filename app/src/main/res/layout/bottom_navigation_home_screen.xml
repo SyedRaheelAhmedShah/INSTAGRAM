@@ -1,32 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignParentBottom="true">
+
+    tools:context=".MainActivity">
 
 
     <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
-        app:fabAnchorMode="cradle"
+        android:layout_gravity="bottom"
         app:fabAlignmentMode="center"
-
-
-        >
+        app:fabAnchorMode="cradle"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="BottomAppBar,MissingConstraints">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/buttomnavigationbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
-            android:visibility="visible"
+            android:layout_alignParentBottom="true"
             app:labelVisibilityMode="labeled"
-            app:menu="@menu/bottom_navigation_menu"
-
-            />
-
+            app:menu="@menu/bottom_navigation_menu" />
     </com.google.android.material.bottomappbar.BottomAppBar>
-
 
 </RelativeLayout>

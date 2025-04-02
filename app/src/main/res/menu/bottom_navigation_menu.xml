@@ -2,18 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home_button_navigation"
-        android:icon="@drawable/home" />
+        android:icon="@drawable/home"
+        android:title="Home" />
     <item
         android:id="@+id/Search_button_navigation"
-        android:icon="@drawable/search" />
+        android:icon="@drawable/search"
+        android:title="Search"
+        />
     <item
         android:id="@+id/upload_button_navigation"
-        android:icon="@drawable/add" />
+        android:icon="@drawable/add"
+        android:title="Upload"
+        />
     <item
         android:id="@+id/Reels_button_navigation"
-        android:icon="@drawable/reel" />
+        android:icon="@drawable/reel"
+        android:title="Reel"
+        />
     <item
         android:id="@+id/user_button_navigation"
-        android:icon="@drawable/user" />
+        android:icon="@drawable/user"
+        android:title="User"
+        />
 
 </menu>

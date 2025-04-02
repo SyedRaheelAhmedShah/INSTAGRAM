@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/instagram_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/instagramlogo" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/instagram_logo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/loginPageUserName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/register_page_button"
+                android:hint=" User Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/loginPageUserPassord"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/loginPageUserName"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_page_button"
+                android:hint=" Password"
+                android:inputType="textPassword|textCapCharacters|textWebPassword"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/login_button_From_login_page_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginPageUserPassord"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="#007BFF"
+                android:text="Log In"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="129dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="false"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_below="@+id/login_button_From_login_page_"
+                android:text="Create account!"
+                android:textColor="#686666" />
+
+            <TextView
+                android:id="@+id/signupFromLoginPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/login_button_From_login_page_"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="1dp"
+                android:layout_toRightOf="@+id/createAccount"
+                android:clickable="false"
+                android:text="signup"
+                android:textColor="#007BFF" />
+
+            <TextView
+                android:id="@+id/homePageFromLoginPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/signupFromLoginPage"
+                android:layout_marginTop="15dp"
+                android:layout_centerInParent="true"
+                android:text="go to home screen"
+                android:textColor="#838485"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

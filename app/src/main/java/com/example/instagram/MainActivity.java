@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     setActionBar(toolbar);
 
     if (getActionBar()!=null){
-//        getActionBar().setDisplayHomeAsUpEnabled(true);       for back button on toolbar 
+//        getActionBar().setDisplayHomeAsUpEnabled(true);       for back button on toolbar
         getActionBar().setTitle("Instagram Clone");
     }
     }
