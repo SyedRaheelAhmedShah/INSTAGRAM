@@ -39,6 +39,7 @@ public class Log_in_Page extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Log_in_Page.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

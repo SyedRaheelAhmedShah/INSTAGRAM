@@ -24,7 +24,6 @@
             android:id="@+id/relativelayout2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="?actionBarSize"
             android:layout_below="@+id/relativelayout1">
 
             <include layout="@layout/middle_view_pagger_home_screen" />
