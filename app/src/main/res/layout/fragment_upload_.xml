@@ -3,15 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#34BF67"
+
     tools:context=".Upload_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="28sp"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="upload fragment toolbar"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Upload fragment" />
+        android:layout_marginTop="?actionBarSize"
+        android:background="#34BF67">
+
+    </RelativeLayout>
 
 </FrameLayout>

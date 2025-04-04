@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C5B657"
     tools:context=".Home_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!--this part is for toolbar-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="28sp"
-        android:layout_height="match_parent"
-        android:text="Home fragment" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <include layout="@layout/home_page_toolbar" />
+    </RelativeLayout>
 
-</FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:background="#C5B657">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home fragment"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
