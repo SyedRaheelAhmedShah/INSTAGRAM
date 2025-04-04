@@ -1,30 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Fragment">
+    tools:context=".MainActivity">
 
-    <!--this part is for toolbar-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
-        <include layout="@layout/home_page_toolbar" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?actionBarSize"
-        android:background="#C5B657">
+        android:fillViewport="true">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home fragment"
-            android:textSize="28sp" />
-    </RelativeLayout>
+            android:orientation="vertical">
+
+            <!-- Toolbar -->
+            <include layout="@layout/home_page_toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <!--   story containerv-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/storysection_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                    tools:ignore="MissingConstraints"
+                    tools:itemCount="7"
+                    tools:listitem="@layout/home_page_story_section" />
+
+            </LinearLayout>
 
 
-</RelativeLayout>
+            <View
+                android:id="@+id/dividerviewstorybar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#D8D4D4"
+                android:minWidth="2dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/showmainscreen_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/home_page_midle_view_post_reels" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

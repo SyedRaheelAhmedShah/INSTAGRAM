@@ -6,14 +6,13 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize">
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true">
 
             <Toolbar
                 android:id="@+id/homeToolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </Toolbar>
+                android:layout_height="wrap_content" />
 
 <!--            <de.hdodenhof.circleimageview.CircleImageView-->
 <!--                xmlns:app="http://schemas.android.com/apk/res-auto"-->
