@@ -46,9 +46,10 @@
                 android:minWidth="2dp" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/showmainscreen_recyclerView"
+                android:id="@+id/midlescreen_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 tools:listitem="@layout/home_page_midle_view_post_reels" />
 

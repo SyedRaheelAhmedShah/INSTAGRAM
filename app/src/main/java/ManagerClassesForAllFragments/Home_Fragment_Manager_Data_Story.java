@@ -1,9 +1,15 @@
 package ManagerClassesForAllFragments;
 
-public class Home_Fragment_Manager_Data {
+public class Home_Fragment_Manager_Data_Story {
     private int id;
     private int Story_Picture;
     private String story_User_Name;
+
+    public Home_Fragment_Manager_Data_Story(int id, int story_Picture, String story_User_Name) {
+        this.id = id;
+        Story_Picture = story_Picture;
+        this.story_User_Name = story_User_Name;
+    }
 
 
     public int getId() {
@@ -28,12 +34,6 @@ public class Home_Fragment_Manager_Data {
     }
 
     public void setStory_User_Name(String story_User_Name) {
-        this.story_User_Name = story_User_Name;
-    }
-
-    public Home_Fragment_Manager_Data(int id, int story_Picture, String story_User_Name) {
-        this.id = id;
-        Story_Picture = story_Picture;
         this.story_User_Name = story_User_Name;
     }
 

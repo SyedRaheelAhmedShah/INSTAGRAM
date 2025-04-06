@@ -3,20 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
     tools:ignore="MissingConstraints">
 
     <LinearLayout
-        android:id="@+id/profileBar"
         android:layout_marginTop="-3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="5dp"
         android:paddingBottom="3dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_image"
+            android:id="@+id/profile_Pic"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="10dp"
@@ -24,7 +24,7 @@
             android:src="@drawable/story_1" />
 
         <TextView
-            android:id="@+id/userName"
+            android:id="@+id/midleScreenUser_Name"
             android:layout_width="190dp"
             android:layout_height="25dp"
             android:layout_marginLeft="10dp"
@@ -36,7 +36,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/music_Title"
             android:layout_width="190dp"
             android:layout_height="20dp"
             android:layout_marginLeft="-200dp"
@@ -55,10 +55,10 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/userPost"
+        android:id="@+id/midleScreenUser_Post"
         android:layout_width="wrap_content"
-        android:layout_height="490dp"
-        android:paddingTop="5dp"
+        android:layout_height="500dp"
+        android:layout_margin="5dp"
         android:scaleType="center"
         android:src="@drawable/story_1" />
 
@@ -74,7 +74,10 @@
             android:id="@+id/heart"
             android:layout_width="28dp"
             android:layout_height="36dp"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/heart" />
 
         <ImageView
@@ -84,16 +87,6 @@
             android:layout_margin="10dp"
             android:layout_toRightOf="@+id/heart"
             android:src="@drawable/comment" />
-
-        <ImageView
-            android:id="@+id/favourite"
-            android:layout_width="30dp"
-            android:layout_height="36dp"
-            android:layout_marginStart="260dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/comment"
-            android:src="@drawable/favourite" />
-
         <ImageView
             android:id="@+id/share"
             android:layout_width="25dp"
@@ -104,28 +97,38 @@
             android:src="@drawable/send" />
 
 
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/share"
+            android:src="@drawable/favourite" />
+
         <TextView
-            android:id="@+id/postlikes"
-            android:layout_width="wrap_content"
+            android:id="@+id/usermidleScreenUser_Name"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
-            android:handwritingBoundsOffsetBottom="@+id/heart"
-            android:text="Likes 100"
+            android:layout_below="@id/heart"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="80dp"
-            android:textColor="#3A3838"
-            android:handwritingBoundsOffsetBottom="@+id/comment"
-            android:text="major decision" />
+            android:id="@+id/midleScreenpost_likes"
+            android:layout_toRightOf="@id/midleScreenUser_Name"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/comment"
+            android:text="Likes 100"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/description"
+            android:id="@+id/post_Caption"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

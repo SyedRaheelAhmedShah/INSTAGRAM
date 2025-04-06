@@ -14,15 +14,15 @@ import com.example.instagram.R;
 
 import java.util.ArrayList;
 
-import ManagerClassesForAllFragments.Home_Fragment_Manager_Data;
+import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
 
 public class Adapter_For_Story_Section extends RecyclerView.Adapter<Adapter_For_Story_Section.ViewHolder> {
 
 
-    ArrayList<Home_Fragment_Manager_Data> StorySectionDataArray;
+    ArrayList<Home_Fragment_Manager_Data_Story> StorySectionDataArray;
     Context context;
 
-    public Adapter_For_Story_Section(ArrayList<Home_Fragment_Manager_Data> storySectionDataArray, Context context) {
+    public Adapter_For_Story_Section(ArrayList<Home_Fragment_Manager_Data_Story> storySectionDataArray, Context context) {
         StorySectionDataArray = storySectionDataArray;
         this.context = context;
     }
@@ -38,11 +38,10 @@ public class Adapter_For_Story_Section extends RecyclerView.Adapter<Adapter_For_
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Home_Fragment_Manager_Data homeFragmentManagerData=StorySectionDataArray.get(position);
+        Home_Fragment_Manager_Data_Story homeFragmentManagerData=StorySectionDataArray.get(position);
         holder.story_User_Image.setImageResource(homeFragmentManagerData.getStory_Picture());
         holder.story_User_Name.setText(homeFragmentManagerData.getStory_User_Name());
     }
-
     @Override
     public int getItemCount() {
         return StorySectionDataArray.size();
