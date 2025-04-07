@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,6 +20,12 @@
 
             <!-- Toolbar -->
             <include layout="@layout/home_page_toolbar" />
+
+<!--            yet on it in soon-->
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:id="@+id/Home_Page_ViewPager"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,7 +40,6 @@
                     app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                     app:layout_constraintTop_toBottomOf="@+id/toolbar"
                     tools:ignore="MissingConstraints"
-                    tools:itemCount="7"
                     tools:listitem="@layout/home_page_story_section" />
 
             </LinearLayout>
@@ -55,5 +62,7 @@
 
 
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

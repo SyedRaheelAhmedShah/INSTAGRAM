@@ -1,33 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeToolbar"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#FAF6F6">
 
 
-        <com.google.android.material.appbar.MaterialToolbar
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:layout_alignParentTop="true">
+            android:layout_height="56dp">
 
-            <Toolbar
-                android:id="@+id/homeToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-<!--            <de.hdodenhof.circleimageview.CircleImageView-->
-<!--                xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--                android:id="@+id/story_1"-->
-<!--                android:layout_width="70dp"-->
-<!--                android:layout_height="70dp"-->
-<!--                android:layout_marginLeft="10dp"-->
-<!--                android:layout_marginTop="10dp"-->
-<!--                android:src="@drawable/story_1"-->
-<!--                app:civ_border_color="#CFB66C"-->
-<!--                app:civ_border_width="3dp" />-->
+            <TextView
+                android:id="@+id/toolbar_title_instagram"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/alex_brush"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="Instagram"
+                android:textColor="@color/black"
+                android:textSize="38sp"
+                android:textStyle="bold" />
 
 
+            <ImageView
+                android:id="@+id/chatsFragmentButton"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/send"
 
-        </com.google.android.material.appbar.MaterialToolbar>
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
 
 
 </RelativeLayout>

@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/midlescreenviewcontainerforfragments"
-    >
-    <androidx.viewpager.widget.ViewPager
+    <RelativeLayout
+        android:id="@+id/midlescreenviewcontainerforfragments"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/home_screen_midle_viewpagger"
-        />
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/home_screen_viewpagger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tablayout" />
 
 
-</RelativeLayout>
+    </RelativeLayout>
 
-</merge>
+</LinearLayout>

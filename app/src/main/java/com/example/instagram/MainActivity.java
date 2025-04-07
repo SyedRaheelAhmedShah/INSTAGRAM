@@ -1,8 +1,6 @@
 package com.example.instagram;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toolbar;
 
@@ -11,15 +9,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.crypto.NullCipher;
+import AllFragments.Home_Fragment;
+import AllFragments.Reel_Fragment;
+import AllFragments.Search_Fragment;
+import AllFragments.Upload_Fragment;
+import AllFragments.User_Profile_Fragment;
 
 public class MainActivity extends AppCompatActivity {
     Toolbar toolbar;
@@ -33,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationItem_work();
 
-    toolbar=findViewById(R.id.homeToolbar);
-    setActionBar(toolbar);
+        toolbar = findViewById(R.id.homeToolbar);
+        setActionBar(toolbar);
 
-    if (getActionBar()!=null){
+        if (getActionBar() != null) {
 //        getActionBar().setDisplayHomeAsUpEnabled(true);       for back button on toolbar
-        getActionBar().setTitle("Instagram Clone");
-    }
+            getActionBar().setTitle("Instagram Clone");
+        }
     }
 
     // method of bottom navigation button
@@ -77,10 +74,8 @@ public class MainActivity extends AppCompatActivity {
     public void loadFragment(Fragment fragment, boolean flag) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        if (flag)
-            ft.add(R.id.midlescreenviewcontainerforfragments, fragment);
-        else
-            ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
+        if (flag) ft.add(R.id.midlescreenviewcontainerforfragments, fragment);
+        else ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
         ft.commit();
     }
 }

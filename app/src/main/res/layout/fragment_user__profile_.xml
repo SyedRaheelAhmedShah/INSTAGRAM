@@ -1,17 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CC9999"
-    tools:context=".User_Profile_Fragment">
+    android:orientation="vertical"
+    tools:context="AllFragments.User_Profile_Fragment">
+
+    <include
+        android:id="@+id/User_Profile_toolbar"
+        layout="@layout/user_profile_page_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/User_Profile_picture"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/story_1"
+                    app:civ_border_color="#CFB66C"
+                    app:civ_border_width="3dp" />
+
+                <TextView
+                    android:id="@+id/Bio"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/User_Profile_picture"
+                    android:layout_marginLeft="10dp"
+                    android:text="HaideR"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/UserPosts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/User_Profile_picture"
+                    android:text="10"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-25dp"
+                    android:layout_marginTop="50sp"
+                    android:layout_toEndOf="@id/UserPosts"
+                    android:text="post"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/UserPosts"
+                    android:text="10"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@id/followers"
+                    android:text="followers"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/followers"
+                    android:text="10"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-35dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toEndOf="@id/following"
+                    android:text="follower"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/edit_profile"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Bio"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/profile_btn_shape"
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="edit profile"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/Profile_share"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Bio"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/edit_profile"
+                    android:background="@drawable/profile_btn_shape"
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="share profile"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/Bio"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/Profile_share"
+                    android:background="@drawable/profile_btn_shape"
+                    android:backgroundTint="@color/white"
+                    android:drawableBottom="@drawable/add_people"
+                    android:text="share profile"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/user_Profile_tablayout"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="28sp"
-        android:layout_height="match_parent"
-        android:text="Use profile fragment" />
+        android:layout_height="wrap_content" />
 
-</FrameLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/user_Profile_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

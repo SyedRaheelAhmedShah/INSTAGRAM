@@ -1,16 +1,20 @@
-package com.example.instagram;
+package AllFragments;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toolbar;
+import android.widget.ImageView;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.instagram.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +27,8 @@ import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
 
 public class Home_Fragment extends Fragment {
 
+    ViewPager Home_Page_ViewPager;
+
     public Home_Fragment() {
         // Required empty public constructor
     }
@@ -32,16 +38,27 @@ public class Home_Fragment extends Fragment {
         // Inflate the layout
         View rootView = inflater.inflate(R.layout.fragment_home_, container, false);
 
-        // Fix Toolbar
-        Toolbar toolbar = rootView.findViewById(R.id.homeToolbar);
-        ((AppCompatActivity) requireActivity()).setActionBar(toolbar);
+        // not working at the moment on this, i will setup viewpager in home fragment and this is home for viewpager
+//        Home_Page_ViewPager=rootView.findViewById(R.id.Home_Page_ViewPager);
+//        ViewPagerChatsAdapter adapter=new ViewPagerChatsAdapter(getChildFragmentManager());
+//        Home_Page_ViewPager.setAdapter(adapter);
 
-        if (((AppCompatActivity) requireActivity()).getActionBar() != null) {
-            ((AppCompatActivity) requireActivity()).getActionBar().setTitle("Instagram Clone");
-        }
+        ImageView chatsButton = rootView.findViewById(R.id.chatsFragmentButton);
+        chatsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+// Replace current fragment with new fragment
+                transaction.replace(R.id.midlescreenviewcontainerforfragments, new Chats_Fragment());
+                transaction.commit();
+            }
+        });
 
         Story_section(rootView);                // for story section
         Midle_Screen_Post_Reel(rootView);      // for midle screen posts and reels
+
         return rootView;
     }
 
