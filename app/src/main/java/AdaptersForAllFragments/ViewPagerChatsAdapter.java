@@ -13,20 +13,17 @@ import AllFragments.Home_Fragment;
 
 public class ViewPagerChatsAdapter extends FragmentPagerAdapter {
 
-
     public ViewPagerChatsAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
-
     @NonNull
     @Override
     public Fragment getItem(int position) {
         switch (position)
         {
             case 0:
-                return new Home_Fragment();
-            case 1:
                 return new Chats_Fragment();
+//
             default:
                 return new Home_Fragment();
         }
@@ -34,6 +31,6 @@ public class ViewPagerChatsAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 1;
     }
 }

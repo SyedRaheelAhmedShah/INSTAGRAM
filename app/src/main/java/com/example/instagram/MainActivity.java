@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.home_button_navigation:
-                        loadFragment(new Home_Fragment(), true);
+                        loadFragment(new Home_Fragment(), false);
                         break;
                     case R.id.Search_button_navigation:
                         loadFragment(new Search_Fragment(), false);
@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
     public void loadFragment(Fragment fragment, boolean flag) {
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
-        if (flag) ft.add(R.id.midlescreenviewcontainerforfragments, fragment);
+        ft.addToBackStack(null);
+        if (flag) ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
         else ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
         ft.commit();
     }

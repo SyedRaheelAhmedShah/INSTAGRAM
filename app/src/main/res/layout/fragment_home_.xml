@@ -27,10 +27,7 @@
 <!--                android:layout_width="match_parent"-->
 <!--                android:layout_height="match_parent" />-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+
                 <!--   story containerv-->
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/storysection_recyclerview"
@@ -42,7 +39,6 @@
                     tools:ignore="MissingConstraints"
                     tools:listitem="@layout/home_page_story_section" />
 
-            </LinearLayout>
 
 
             <View

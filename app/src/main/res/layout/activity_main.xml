@@ -19,7 +19,6 @@
 <!--        </RelativeLayout>-->
 
         <!--this part is for midle screen-->
-
         <RelativeLayout
             android:id="@+id/relativelayout2"
             android:layout_width="match_parent"

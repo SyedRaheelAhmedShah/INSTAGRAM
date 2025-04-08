@@ -8,17 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableLayout
-            android:id="@+id/tablayout"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/home_screen_viewpagger"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/tablayout" />
-
 
     </RelativeLayout>
 
