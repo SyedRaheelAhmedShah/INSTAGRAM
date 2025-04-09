@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        fillViewport="true"
         android:fillViewport="true">
 
 
@@ -18,8 +20,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Toolbar -->
-            <include layout="@layout/home_page_toolbar" />
+<!--             Toolbar -->
+            <include layout="@layout/home_page_toolbar"
+                android:id="@+id/homepagetoolbar"/>
+
+
 
 <!--            yet on it in soon-->
 <!--            <androidx.viewpager.widget.ViewPager-->

@@ -21,10 +21,12 @@ public class ViewPagerUserProfileAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new User_Pictures_Fragment();
-            case  1:
+            case 1:
                 return new User_Videos_Fragment();
-            default:
+            case 2:
                 return new User_Tags_Fragment();
+            default:
+                return new User_Pictures_Fragment();
         }
     }
 
@@ -37,14 +39,15 @@ public class ViewPagerUserProfileAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 
-        switch (position)
-        {
+        switch (position) {
             case 0:
                 return "Photos";
             case 1:
                 return "Videos";
-            default:
+            case 2:
                 return "Tags";
+            default:
+                return "Photos";
         }
     }
 }

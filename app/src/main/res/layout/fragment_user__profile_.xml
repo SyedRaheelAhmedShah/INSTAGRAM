@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,7 +28,6 @@
                     android:id="@+id/User_Profile_picture"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:layout_marginLeft="18dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/story_1"
@@ -35,19 +35,25 @@
                     app:civ_border_width="3dp" />
 
                 <TextView
-                    android:id="@+id/Bio"
-                    android:layout_width="350dp"
+                    android:id="@+id/user_NickName"
+                    android:layout_width="160dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/User_Profile_picture"
-                    android:layout_marginLeft="10dp"
                     android:text="HaideR"
                     android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/bio"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_NickName"
+                    android:text="allhumdulliah for everything" />
 
                 <TextView
                     android:id="@+id/UserPosts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="70dp"
                     android:layout_marginTop="30dp"
                     android:layout_toRightOf="@+id/User_Profile_picture"
                     android:text="10"
@@ -99,47 +105,79 @@
                     android:layout_marginLeft="-35dp"
                     android:layout_marginTop="50dp"
                     android:layout_toEndOf="@id/following"
-                    android:text="follower"
+                    android:text="following"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
-                <Button
+                <TextView
                     android:id="@+id/edit_profile"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/Bio"
-                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/bio"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/profile_btn_shape"
-                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center"
                     android:text="edit profile"
                     android:textColor="@color/black" />
 
-                <Button
+                <TextView
                     android:id="@+id/Profile_share"
                     android:layout_width="160dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/Bio"
+                    android:layout_below="@+id/bio"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/edit_profile"
                     android:background="@drawable/profile_btn_shape"
-                    android:backgroundTint="@android:color/transparent"
+                    android:gravity="center"
                     android:text="share profile"
                     android:textColor="@color/black" />
 
-                <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/Bio"
+                <TextView
+                    android:layout_width="33dp"
+                    android:layout_height="22dp"
+                    android:layout_below="@+id/bio"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_toRightOf="@+id/Profile_share"
                     android:background="@drawable/profile_btn_shape"
-                    android:backgroundTint="@color/white"
                     android:drawableBottom="@drawable/add_people"
-                    android:text="share profile"
                     android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_profile"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        tools:listitem="@layout/user_highlights">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/add_New_Hightlights"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/add_new_hightlights"
+                        app:civ_border_color="#252424"
+                        app:civ_border_width="0.5dp" />
+
+                    <TextView
+                        android:id="@+id/add_New_Hightlights_Name"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/add_New_Hightlights"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="New"
+                        android:textSize="15sp" />
+                </LinearLayout>
 
             </RelativeLayout>
         </androidx.core.widget.NestedScrollView>
@@ -155,6 +193,5 @@
         android:id="@+id/user_Profile_ViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 
 </LinearLayout>

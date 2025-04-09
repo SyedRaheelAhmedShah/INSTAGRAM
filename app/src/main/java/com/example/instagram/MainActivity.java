@@ -9,9 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
+import AdaptersForAllFragments.ViewPagerChatsAdapter;
 import AllFragments.Home_Fragment;
 import AllFragments.Reel_Fragment;
 import AllFragments.Search_Fragment;
@@ -19,7 +22,7 @@ import AllFragments.Upload_Fragment;
 import AllFragments.User_Profile_Fragment;
 
 public class MainActivity extends AppCompatActivity {
-    Toolbar toolbar;
+
     BottomNavigationView bottomNavigationItem;
 
     @Override
@@ -28,10 +31,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         bottomNavigationItem_work();
 
-        toolbar = findViewById(R.id.homeToolbar);
-        setActionBar(toolbar);
+
 
         if (getActionBar() != null) {
 //        getActionBar().setDisplayHomeAsUpEnabled(true);       for back button on toolbar

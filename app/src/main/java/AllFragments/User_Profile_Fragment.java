@@ -39,4 +39,5 @@ public class User_Profile_Fragment extends Fragment {
         return  rootView;
 
     }
+
 }

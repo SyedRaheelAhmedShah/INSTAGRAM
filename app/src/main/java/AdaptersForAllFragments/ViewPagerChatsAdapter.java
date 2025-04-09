@@ -10,6 +10,10 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import AllFragments.Chats_Fragment;
 import AllFragments.Home_Fragment;
+import AllFragments.Reel_Fragment;
+import AllFragments.Search_Fragment;
+import AllFragments.Upload_Fragment;
+import AllFragments.User_Profile_Fragment;
 
 public class ViewPagerChatsAdapter extends FragmentPagerAdapter {
 
@@ -19,18 +23,17 @@ public class ViewPagerChatsAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position)
-        {
-            case 0:
-                return new Chats_Fragment();
-//
-            default:
-                return new Home_Fragment();
+        switch (position) {
+            case 0: return new Home_Fragment();
+            case 1: return new Chats_Fragment();
+            default: return new Home_Fragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 1;
+        return 2;
     }
 }
+
+

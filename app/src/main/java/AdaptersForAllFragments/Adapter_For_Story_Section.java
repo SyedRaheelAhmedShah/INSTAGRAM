@@ -55,7 +55,7 @@ public class Adapter_For_Story_Section extends RecyclerView.Adapter<Adapter_For_
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            story_User_Image = itemView.findViewById(R.id.story_1);
+            story_User_Image = itemView.findViewById(R.id.user_Hightlishts);
             story_User_Name = itemView.findViewById(R.id.Story_user_name);
         }
     }

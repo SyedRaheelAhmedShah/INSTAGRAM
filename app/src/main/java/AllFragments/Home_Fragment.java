@@ -21,13 +21,14 @@ import java.util.List;
 
 import AdaptersForAllFragments.Adapter_For_Midle_Screen;
 import AdaptersForAllFragments.Adapter_For_Story_Section;
+import AdaptersForAllFragments.ViewPagerChatsAdapter;
 import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Midle_Screen;
 import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
 
 
 public class Home_Fragment extends Fragment {
 
-    ViewPager Home_Page_ViewPager;
+    ViewPager home_Page_ViewPager;
 
     public Home_Fragment() {
         // Required empty public constructor
