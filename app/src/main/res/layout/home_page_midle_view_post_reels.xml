@@ -84,7 +84,10 @@
             android:id="@+id/comment"
             android:layout_width="35dp"
             android:layout_height="36dp"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_toRightOf="@+id/heart"
             android:src="@drawable/comment" />
         <ImageView

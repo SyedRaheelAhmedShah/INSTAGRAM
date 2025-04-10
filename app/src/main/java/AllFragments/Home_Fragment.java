@@ -57,6 +57,8 @@ public class Home_Fragment extends Fragment {
             }
         });
 
+
+
         Story_section(rootView);                // for story section
         Midle_Screen_Post_Reel(rootView);      // for midle screen posts and reels
 
