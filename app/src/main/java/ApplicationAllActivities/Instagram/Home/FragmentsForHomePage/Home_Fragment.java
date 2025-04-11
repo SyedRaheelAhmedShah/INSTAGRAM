@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.Home.FragmentsForHomePage;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +21,6 @@ import java.util.List;
 
 import AdaptersForAllFragments.Adapter_For_Midle_Screen;
 import AdaptersForAllFragments.Adapter_For_Story_Section;
-import AdaptersForAllFragments.ViewPagerChatsAdapter;
 import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Midle_Screen;
 import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
 

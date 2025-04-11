@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:background="#CF6E6E"
     android:layout_height="match_parent"
-    tools:context="AllFragments.Reel_Fragment">
+    tools:context="ApplicationAllActivities.Instagram.Reels.FragmentsForReelsPage.Reel_Fragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

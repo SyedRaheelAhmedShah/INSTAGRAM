@@ -9,14 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-<!--        &lt;!&ndash;this part is for toolbar&ndash;&gt;-->
-<!--        <RelativeLayout-->
-<!--            android:id="@+id/relativelayout1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:layout_height="wrap_content">-->
-<!--            <include layout="@layout/home_page_toolbar" />-->
-<!--        </RelativeLayout>-->
+        <!--    this part is for toolbar&ndash-->
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <include layout="@layout/homepage_tablayout" />
+        </RelativeLayout>
 
         <!--this part is for midle screen-->
         <RelativeLayout

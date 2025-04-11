@@ -2,21 +2,17 @@ package AdaptersForAllFragments;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-import androidx.lifecycle.Lifecycle;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import AllFragments.Chats_Fragment;
-import AllFragments.Home_Fragment;
-import AllFragments.Reel_Fragment;
-import AllFragments.Search_Fragment;
-import AllFragments.Upload_Fragment;
-import AllFragments.User_Profile_Fragment;
+import java.util.ArrayList;
+import java.util.List;
+
+import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Chats_Fragment;
+import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Home_Fragment;
 
 public class ViewPagerChatsAdapter extends FragmentPagerAdapter {
-
+private List<Fragment> mFragmentList=new ArrayList<>();
     public ViewPagerChatsAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }

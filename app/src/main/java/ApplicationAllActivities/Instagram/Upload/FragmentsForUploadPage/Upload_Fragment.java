@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.Upload.FragmentsForUploadPage;
 
 import android.os.Bundle;
 

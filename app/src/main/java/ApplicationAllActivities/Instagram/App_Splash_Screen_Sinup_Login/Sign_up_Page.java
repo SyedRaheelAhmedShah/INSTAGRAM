@@ -1,4 +1,4 @@
-package Splash_Screen_Sinup_Login;
+package ApplicationAllActivities.Instagram.App_Splash_Screen_Sinup_Login;
 
 import android.content.Intent;
 import android.os.Bundle;

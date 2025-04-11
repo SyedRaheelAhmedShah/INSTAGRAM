@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.Search.FragmentsForSearchPage;
 
 import android.os.Bundle;
 

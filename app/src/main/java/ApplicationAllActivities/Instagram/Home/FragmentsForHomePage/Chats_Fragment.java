@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.Home.FragmentsForHomePage;
 
 import android.os.Bundle;
 
