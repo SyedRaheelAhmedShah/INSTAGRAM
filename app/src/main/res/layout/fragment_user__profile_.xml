@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="AllFragments.User_Profile_Fragment">
+    tools:context="ApplicationAllActivities.Instagram.User.FragmentsForUserPage.User_Profile_Fragment">
 
     <include
         android:id="@+id/User_Profile_toolbar"

@@ -19,10 +19,10 @@ import com.example.instagram.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import AdaptersForAllFragments.Adapter_For_Midle_Screen;
-import AdaptersForAllFragments.Adapter_For_Story_Section;
-import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Midle_Screen;
-import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
+import ApplicationAllActivities.Instagram.Home.HomeAdapters.Home_Fragment_Adapter_For_Midle_Screen;
+import ApplicationAllActivities.Instagram.Home.HomeAdapters.Home_Fragment_Adapter_For_Story_Section;
+import ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments.Home_Fragment_Manager_Data_Midle_Screen;
+import ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments.Home_Fragment_Manager_Data_Story;
 
 
 public class Home_Fragment extends Fragment {
@@ -86,7 +86,7 @@ public class Home_Fragment extends Fragment {
         StorySectionDataArray.add(new Home_Fragment_Manager_Data_Story(4, R.drawable.story_4, "shah"));
 
         // Set Adapter
-        Adapter_For_Story_Section Story_Selection_Adapter = new Adapter_For_Story_Section((ArrayList<Home_Fragment_Manager_Data_Story>) StorySectionDataArray, getContext());
+        Home_Fragment_Adapter_For_Story_Section Story_Selection_Adapter = new Home_Fragment_Adapter_For_Story_Section((ArrayList<Home_Fragment_Manager_Data_Story>) StorySectionDataArray, getContext());
         storyRecyclerView.setAdapter(Story_Selection_Adapter);
         storyRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
@@ -116,7 +116,7 @@ public class Home_Fragment extends Fragment {
         midleScreenDataArray.add((new Home_Fragment_Manager_Data_Midle_Screen(R.drawable.story_1, R.drawable.story_5, "995", "Haider", "tery bin", "AJK")));
 
         // set adapter
-        Adapter_For_Midle_Screen adapterForMidleScreen = new Adapter_For_Midle_Screen((ArrayList<Home_Fragment_Manager_Data_Midle_Screen>) midleScreenDataArray, getContext());
+        Home_Fragment_Adapter_For_Midle_Screen adapterForMidleScreen = new Home_Fragment_Adapter_For_Midle_Screen((ArrayList<Home_Fragment_Manager_Data_Midle_Screen>) midleScreenDataArray, getContext());
         midleScreenRecyclerView.setAdapter(adapterForMidleScreen);
         midleScreenRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 

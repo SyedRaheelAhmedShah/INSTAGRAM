@@ -1,4 +1,4 @@
-package ManagerClassesForAllFragments;
+package ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments;
 
 public class Home_Fragment_Manager_Data_Story {
     private int id;

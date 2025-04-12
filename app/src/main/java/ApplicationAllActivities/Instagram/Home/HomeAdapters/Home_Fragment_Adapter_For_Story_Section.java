@@ -1,4 +1,4 @@
-package AdaptersForAllFragments;
+package ApplicationAllActivities.Instagram.Home.HomeAdapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import com.example.instagram.R;
 
 import java.util.ArrayList;
 
-import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Story;
+import ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments.Home_Fragment_Manager_Data_Story;
 
-public class Adapter_For_Story_Section extends RecyclerView.Adapter<Adapter_For_Story_Section.ViewHolder> {
+public class Home_Fragment_Adapter_For_Story_Section extends RecyclerView.Adapter<Home_Fragment_Adapter_For_Story_Section.ViewHolder> {
 
 
     ArrayList<Home_Fragment_Manager_Data_Story> StorySectionDataArray;
     Context context;
 
-    public Adapter_For_Story_Section(ArrayList<Home_Fragment_Manager_Data_Story> storySectionDataArray, Context context) {
+    public Home_Fragment_Adapter_For_Story_Section(ArrayList<Home_Fragment_Manager_Data_Story> storySectionDataArray, Context context) {
         StorySectionDataArray = storySectionDataArray;
         this.context = context;
     }

@@ -1,4 +1,4 @@
-package ManagerClassesForAllFragments;
+package ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments;
 
 public class Home_Fragment_Manager_Data_Midle_Screen {
     int Midle_Screen_Profile_pic, Midle_Screen_Posts;

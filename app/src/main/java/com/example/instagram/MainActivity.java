@@ -8,19 +8,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.tabs.TabLayout;
 
 import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Home_Fragment;
 import ApplicationAllActivities.Instagram.Reels.FragmentsForReelsPage.Reel_Fragment;
 import ApplicationAllActivities.Instagram.Search.FragmentsForSearchPage.Search_Fragment;
 import ApplicationAllActivities.Instagram.Upload.FragmentsForUploadPage.Upload_Fragment;
-import AllFragments.User_Profile_Fragment;
+import ApplicationAllActivities.Instagram.User.FragmentsForUserPage.User_Profile_Fragment;
 
 public class MainActivity extends AppCompatActivity {
 
+    TabLayout homeFragmentTabLayout;
+    ViewPager homeFragmentViewPager;
     BottomNavigationView bottomNavigationItem;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             getActionBar().setTitle("Instagram Clone");
         }
     }
+
     // method of bottom navigation button
     private void bottomNavigationItem_work() {
         bottomNavigationItem = findViewById(R.id.buttomnavigationbar);
@@ -65,12 +69,12 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationItem.setSelectedItemId(R.id.home_button_navigation);
     }
 
-    public void loadFragment(Fragment fragment, boolean flag) {
+    public void loadFragment(Fragment fragment, boolean flag) {         // remember if the use if statement then nevet forget else statement
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         ft.addToBackStack(null); // if fragment store recent last fragment in stack then use this method >> addToBackStack
         if (flag) ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
-//        else ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
+        else ft.replace(R.id.midlescreenviewcontainerforfragments, fragment);
         ft.commit();
     }
 }

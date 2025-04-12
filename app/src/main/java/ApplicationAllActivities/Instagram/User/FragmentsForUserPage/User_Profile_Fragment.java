@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.User.FragmentsForUserPage;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.instagram.R;
 import com.google.android.material.tabs.TabLayout;
 
-import AdaptersForAllFragments.ViewPagerUserProfileAdapter;
+import ApplicationAllActivities.Instagram.User.UserAdapter.Sett_Tab_ViewPager_User_Profile_Fragment_Adapter;
 
 public class User_Profile_Fragment extends Fragment {
 
@@ -30,7 +30,7 @@ public class User_Profile_Fragment extends Fragment {
         user_Profile_TabLayout=rootView.findViewById(R.id.user_Profile_tablayout);
         user_Profile_ViewPager=rootView.findViewById(R.id.user_Profile_ViewPager);
 
-        ViewPagerUserProfileAdapter adapter = new ViewPagerUserProfileAdapter(getChildFragmentManager());
+        Sett_Tab_ViewPager_User_Profile_Fragment_Adapter adapter = new Sett_Tab_ViewPager_User_Profile_Fragment_Adapter(getChildFragmentManager());
         user_Profile_ViewPager.setAdapter(adapter);
 
         // Link TabLayout with ViewPager

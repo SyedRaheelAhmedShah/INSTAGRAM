@@ -1,4 +1,4 @@
-package AllFragments;
+package ApplicationAllActivities.Instagram.User.FragmentsForUserPage;
 
 import android.os.Bundle;
 
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 
 import com.example.instagram.R;
 
-public class User_Tags_Fragment extends Fragment {
+public class User_Videos_Fragment extends Fragment {
 
-    public User_Tags_Fragment() {
+    public User_Videos_Fragment() {
         // Required empty public constructor
     }
 
@@ -20,6 +20,6 @@ public class User_Tags_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user__tags_, container, false);
+        return inflater.inflate(R.layout.fragment_user__videos, container, false);
     }
 }

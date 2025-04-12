@@ -1,4 +1,4 @@
-package AdaptersForAllFragments;
+package ApplicationAllActivities.Instagram.User.UserAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -6,12 +6,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import AllFragments.User_Pictures_Fragment;
-import AllFragments.User_Tags_Fragment;
-import AllFragments.User_Videos_Fragment;
+import ApplicationAllActivities.Instagram.User.FragmentsForUserPage.User_Pictures_Fragment;
+import ApplicationAllActivities.Instagram.User.FragmentsForUserPage.User_Tags_Fragment;
+import ApplicationAllActivities.Instagram.User.FragmentsForUserPage.User_Videos_Fragment;
 
-public class ViewPagerUserProfileAdapter extends FragmentPagerAdapter {
-    public ViewPagerUserProfileAdapter(@NonNull FragmentManager fm) {
+public class Sett_Tab_ViewPager_User_Profile_Fragment_Adapter extends FragmentPagerAdapter {
+    public Sett_Tab_ViewPager_User_Profile_Fragment_Adapter(@NonNull FragmentManager fm) {
         super(fm);
     }
 

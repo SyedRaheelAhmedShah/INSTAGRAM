@@ -1,10 +1,10 @@
-package ManagerClassesForAllFragments;
+package ApplicationAllActivities.Instagram.User.UserPageManagerClassesForFragments;
 
-public class UserAllPictues_Manager {
+public class User_Pictures_Fragment_Manager {
 
    private int pictures;
 
-    public UserAllPictues_Manager(int pictures) {
+    public User_Pictures_Fragment_Manager(int pictures) {
         this.pictures = pictures;
     }
 

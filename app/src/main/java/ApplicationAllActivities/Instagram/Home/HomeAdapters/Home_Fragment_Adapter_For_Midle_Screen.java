@@ -1,7 +1,6 @@
-package AdaptersForAllFragments;
+package ApplicationAllActivities.Instagram.Home.HomeAdapters;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,14 +14,14 @@ import com.example.instagram.R;
 
 import java.util.List;
 
-import ManagerClassesForAllFragments.Home_Fragment_Manager_Data_Midle_Screen;
+import ApplicationAllActivities.Instagram.Home.HomePageManagerClassesForFragments.Home_Fragment_Manager_Data_Midle_Screen;
 
-public class Adapter_For_Midle_Screen extends RecyclerView.Adapter<Adapter_For_Midle_Screen.ViewHolder> {
+public class Home_Fragment_Adapter_For_Midle_Screen extends RecyclerView.Adapter<Home_Fragment_Adapter_For_Midle_Screen.ViewHolder> {
 
     List<Home_Fragment_Manager_Data_Midle_Screen> MidleScreenSectionDataArray;
     Context context;
 
-    public Adapter_For_Midle_Screen(List<Home_Fragment_Manager_Data_Midle_Screen> midleScreenSectionDataArray, Context context) {
+    public Home_Fragment_Adapter_For_Midle_Screen(List<Home_Fragment_Manager_Data_Midle_Screen> midleScreenSectionDataArray, Context context) {
         MidleScreenSectionDataArray = midleScreenSectionDataArray;
         this.context = context;
     }

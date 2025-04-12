@@ -1,4 +1,4 @@
-package AllFragments;
+package OthersAllFragments;
 
 import android.os.Bundle;
 
