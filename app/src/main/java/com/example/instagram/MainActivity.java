@@ -12,6 +12,8 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Home_Fragment;
 import ApplicationAllActivities.Instagram.Reels.FragmentsForReelsPage.Reel_Fragment;
@@ -24,10 +26,16 @@ public class MainActivity extends AppCompatActivity {
     TabLayout homeFragmentTabLayout;
     ViewPager homeFragmentViewPager;
     BottomNavigationView bottomNavigationItem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("message");
+
+        myRef.setValue("Hello, World!");
 
         bottomNavigationItem_work();
 

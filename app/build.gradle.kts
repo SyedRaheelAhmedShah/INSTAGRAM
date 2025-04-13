@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -34,6 +35,7 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+    implementation("com.google.firebase:firebase-database:21.0.0")
     testImplementation("junit:junit:4.13.2")
     implementation("androidx.navigation:navigation-fragment:2.8.8")
     implementation("androidx.navigation:navigation-ui:2.8.8")
