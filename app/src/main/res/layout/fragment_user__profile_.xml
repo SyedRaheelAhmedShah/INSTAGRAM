@@ -49,65 +49,65 @@
                     android:layout_below="@+id/user_NickName"
                     android:text="allhumdulliah for everything" />
 
-                <TextView
-                    android:id="@+id/UserPosts"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_toRightOf="@+id/User_Profile_picture"
-                    android:text="10"
-                    android:textColor="@color/black" />
+<!--                <TextView-->
+<!--                    android:id="@+id/UserPosts"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="70dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_toRightOf="@+id/User_Profile_picture"-->
+<!--                    android:text="10"-->
+<!--                    android:textColor="@color/black" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="-25dp"
-                    android:layout_marginTop="50sp"
-                    android:layout_toEndOf="@id/UserPosts"
-                    android:text="post"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="-25dp"-->
+<!--                    android:layout_marginTop="50sp"-->
+<!--                    android:layout_toEndOf="@id/UserPosts"-->
+<!--                    android:text="post"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
 
-                <TextView
-                    android:id="@+id/followers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_toRightOf="@id/UserPosts"
-                    android:text="10"
-                    android:textColor="@color/black" />
+<!--                <TextView-->
+<!--                    android:id="@+id/followers"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="60dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_toRightOf="@id/UserPosts"-->
+<!--                    android:text="10"-->
+<!--                    android:textColor="@color/black" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="-35dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_toEndOf="@id/followers"
-                    android:text="followers"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="-35dp"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:layout_toEndOf="@id/followers"-->
+<!--                    android:text="followers"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
 
-                <TextView
-                    android:id="@+id/following"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_toRightOf="@id/followers"
-                    android:text="10"
-                    android:textColor="@color/black" />
+<!--                <TextView-->
+<!--                    android:id="@+id/following"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="80dp"-->
+<!--                    android:layout_marginTop="30dp"-->
+<!--                    android:layout_toRightOf="@id/followers"-->
+<!--                    android:text="10"-->
+<!--                    android:textColor="@color/black" />-->
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="-35dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_toEndOf="@id/following"
-                    android:text="following"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="-35dp"-->
+<!--                    android:layout_marginTop="50dp"-->
+<!--                    android:layout_toEndOf="@id/following"-->
+<!--                    android:text="following"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="18sp" />-->
 
                 <TextView
                     android:id="@+id/edit_profile"
