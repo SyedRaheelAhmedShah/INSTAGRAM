@@ -22,9 +22,6 @@
             android:name="ApplicationAllActivities.Instagram.App_Splash_Screen_Sinup_Login.Sign_up_Page"
             android:exported="false" />
         <activity
-            android:name=".Login_Page"
-            android:exported="false" />
-        <activity
             android:name="ApplicationAllActivities.Instagram.App_Splash_Screen_Sinup_Login.instagram_splash_screen"
             android:exported="true">
             <intent-filter>
@@ -40,8 +37,12 @@
             android:name=".Login_page"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Home_activity"
             android:exported="false" />
+        <activity android:name="ApplicationAllActivities.Instagram.Search.Search_Activity"/>
+        <activity android:name="ApplicationAllActivities.Instagram.Upload.Upload_Activity"/>
+        <activity android:name="ApplicationAllActivities.Instagram.Reels.Likes_Activity"/>
+        <activity android:name="ApplicationAllActivities.Instagram.User.UserProfile_Activity"/>
 
         <meta-data
             android:name="preloaded_fonts"

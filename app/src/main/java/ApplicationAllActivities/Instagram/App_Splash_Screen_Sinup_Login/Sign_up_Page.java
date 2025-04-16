@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.instagram.MainActivity;
+import com.example.instagram.Home_activity;
 import com.example.instagram.R;
 
 public class Sign_up_Page extends AppCompatActivity {
@@ -39,7 +39,7 @@ public class Sign_up_Page extends AppCompatActivity {
         this.homePageFromSignupPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Sign_up_Page.this, MainActivity.class);
+                Intent intent = new Intent(Sign_up_Page.this, Home_activity.class);
                 startActivity(intent);
                 finish();
             }

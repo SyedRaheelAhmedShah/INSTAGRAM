@@ -1,4 +1,4 @@
-package ApplicationAllActivities.Instagram.Upload;
+package ApplicationAllActivities.Instagram.User;
 
 import static android.content.ContentValues.TAG;
 
@@ -15,18 +15,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import Util.BottomNavigationViewHelper;
 
-public class Upload_Activity extends AppCompatActivity {
-    private static final int ACTIVITY_NUM=2;
+public class UserProfile_Activity extends AppCompatActivity {
+    private static final int ACTIVITY_NUM=5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.userprofile_activity);
     }
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationView bottomNavigationViewEx = (BottomNavigationView) findViewById(R.id.buttomnavigationbar);
         BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
-        BottomNavigationViewHelper.enableNavigation(Upload_Activity.this, this,bottomNavigationViewEx);
+        BottomNavigationViewHelper.enableNavigation(UserProfile_Activity.this, this,bottomNavigationViewEx);
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
