@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.instagram.Home_activity;
 import com.example.instagram.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,7 +26,7 @@ public class BottomNavigationViewHelper {
 
     private static final String TAG = "BottomNavigationViewHel";
 
-    public static void setupBottomNavigationView(BottomNavigationView bottomNavigationView){
+    public static void setupBottomNavigationView(BottomNavigationView bottomNavigationView) {
         Log.d(TAG, "setupBottomNavigationView: Setting up BottomNavigationView");
 
         // Ensure BottomNavigationViewEx is being used, since BottomNavigationView does not support these methods
@@ -34,11 +36,11 @@ public class BottomNavigationViewHelper {
 //        bottomNavigationView.setTextVisibility(false);
     }
 
-    public static void enableNavigation(final Context context, final Activity callingActivity, BottomNavigationView view){
+    public static void enableNavigation(final Context context, final Activity callingActivity, BottomNavigationView view) {
         view.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
                     case R.id.home_button_navigation:
                         Intent intent1 = new Intent(context, Home_activity.class); // Activity 0
@@ -47,7 +49,7 @@ public class BottomNavigationViewHelper {
                         break;
 
                     case R.id.Search_button_navigation:
-                        Intent intent2  = new Intent(context, Search_Activity.class); // Activity 1
+                        Intent intent2 = new Intent(context, Search_Activity.class); // Activity 1
                         context.startActivity(intent2);
 //                        callingActivity.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         break;
@@ -74,5 +76,5 @@ public class BottomNavigationViewHelper {
                 return true; // Fix return value to true so selection works
             }
         });
-    }
+        }
 }

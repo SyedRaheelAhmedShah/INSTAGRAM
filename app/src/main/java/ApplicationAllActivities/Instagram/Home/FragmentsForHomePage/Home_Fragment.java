@@ -51,7 +51,7 @@ public class Home_Fragment extends Fragment {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
 
 // Replace current fragment with new fragment
-                transaction.replace(R.id.midlescreenviewcontainerforfragments, new Chats_Fragment());
+                transaction.replace(R.id.midlescreencontainerViewpager, new Chats_Fragment());
                 transaction.commit();
             }
         });
