@@ -38,6 +38,7 @@ public class Home_activity extends AppCompatActivity {
 //        getActionBar().setDisplayHomeAsUpEnabled(true);       for back button on toolbar
             getActionBar().setTitle("Instagram Clone");
         }
+
         setUpViewPager();
         setupBottomNavigationView();
 
@@ -46,7 +47,7 @@ public class Home_activity extends AppCompatActivity {
         myRef.setValue("Hello, World!");
     }
 
-    // responsible for tablayout, swipe up on fragment thats are Home, Camera, Chats
+    // swipe up on fragment on home activity thats are Home, Camera, Chats
     private void setUpViewPager() {
         TabSectionViewPagerFragment adapter = new TabSectionViewPagerFragment(getSupportFragmentManager());
         adapter.addFragmentOntabbar(new Camera_Fragment());
@@ -65,10 +66,10 @@ public class Home_activity extends AppCompatActivity {
     // this is for bottomnavigationbar and also call this method in each activity
     private void setupBottomNavigationView() {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
-        BottomNavigationView bottomNavigationViewEx = (BottomNavigationView) findViewById(R.id.buttomnavigationbar);
-        BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationViewEx);
-        BottomNavigationViewHelper.enableNavigation(Home_activity.this, this, bottomNavigationViewEx);
-        Menu menu = bottomNavigationViewEx.getMenu();
+        BottomNavigationView bottomNavigationView =findViewById(R.id.buttomnavigationbar);
+        BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationView);
+        BottomNavigationViewHelper.enableNavigation(Home_activity.this, this, bottomNavigationView);
+        Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
 

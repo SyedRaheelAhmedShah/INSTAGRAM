@@ -16,16 +16,13 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true">
 
-<!--            <include layout="@layout/homepage_tablayout" />-->
+            <!-- <include layout="@layout/homepage_tablayout" />-->
         </RelativeLayout>
-
         <!--this part is for midle screen-->
         <RelativeLayout
             android:id="@+id/relativelayout2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            >
+            android:layout_height="match_parent">
 
             <include layout="@layout/middle_view_pagger_home_screen" />
 

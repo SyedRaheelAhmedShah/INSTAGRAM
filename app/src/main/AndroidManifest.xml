@@ -13,9 +13,6 @@
         android:theme="@style/Mycustom.Theme.instagram"
         tools:targetApi="31">
         <activity
-            android:name="ApplicationAllActivities.Instagram.Home.Home_Activity"
-            android:exported="false" />
-        <activity
             android:name="ApplicationAllActivities.Instagram.App_Splash_Screen_Sinup_Login.Log_in_Page"
             android:exported="false" />
         <activity
@@ -26,23 +23,16 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Signup_page"
-            android:exported="false" />
-        <activity
-            android:name=".Login_page"
-            android:exported="false" />
-        <activity
             android:name=".Home_activity"
             android:exported="false" />
-        <activity android:name="ApplicationAllActivities.Instagram.Search.Search_Activity"/>
-        <activity android:name="ApplicationAllActivities.Instagram.Upload.Upload_Activity"/>
-        <activity android:name="ApplicationAllActivities.Instagram.Reels.Likes_Activity"/>
-        <activity android:name="ApplicationAllActivities.Instagram.User.UserProfile_Activity"/>
+        <activity android:name="ApplicationAllActivities.Instagram.Search.Search_Activity" />
+        <activity android:name="ApplicationAllActivities.Instagram.Upload.Upload_Activity" />
+        <activity android:name="ApplicationAllActivities.Instagram.Reels.Likes_Activity" />
+        <activity android:name="ApplicationAllActivities.Instagram.User.UserProfile_Activity" />
 
         <meta-data
             android:name="preloaded_fonts"
