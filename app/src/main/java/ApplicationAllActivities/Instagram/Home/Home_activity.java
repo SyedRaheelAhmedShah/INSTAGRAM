@@ -50,11 +50,11 @@ public class Home_activity extends AppCompatActivity {
     // swipe up on fragment on home activity thats are Home, Camera, Chats
     private void setUpViewPager() {
         TabSectionViewPagerFragment adapter = new TabSectionViewPagerFragment(getSupportFragmentManager());
-        adapter.addFragmentOntabbar(new Camera_Fragment());
-        adapter.addFragmentOntabbar(new Home_Fragment());
-        adapter.addFragmentOntabbar(new Chats_Fragment());
-        ViewPager viewPager = findViewById(R.id.midlescreencontainerViewpager);
-        viewPager.setAdapter(adapter);
+//        adapter.addFragmentOntabbar(new Camera_Fragment());
+//        adapter.addFragmentOntabbar(new Home_Fragment());
+//        adapter.addFragmentOntabbar(new Chats_Fragment());
+//        ViewPager viewPager = findViewById(R.id.midlescreencontainerViewpager);
+//        viewPager.setAdapter(adapter);
 //        TabLayout tabLayout = findViewById(R.id.tablayoutHomeActivity);
 //        tabLayout.setupWithViewPager(viewPager);
 //        tabLayout.getTabAt(0).setIcon(R.drawable.home);
@@ -67,8 +67,7 @@ public class Home_activity extends AppCompatActivity {
     private void setupBottomNavigationView() {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
         BottomNavigationView bottomNavigationView =findViewById(R.id.buttomnavigationbar);
-        BottomNavigationViewHelper.setupBottomNavigationView(bottomNavigationView);
-        BottomNavigationViewHelper.enableNavigation(Home_activity.this, this, bottomNavigationView);
+        BottomNavigationViewHelper.enableNavigation(Home_activity.this,  bottomNavigationView);
         Menu menu = bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);

@@ -29,17 +29,9 @@ public class BottomNavigationViewHelper {
 
     private static final String TAG = "BottomNavigationViewHel";
 
-    public static void setupBottomNavigationView(BottomNavigationView bottomNavigationView) {
-        Log.d(TAG, "setupBottomNavigationView: Setting up BottomNavigationView");
 
-        // Ensure BottomNavigationViewEx is being used, since BottomNavigationView does not support these methods
-//        bottomNavigationView.enableAnimation(false);
-//        bottomNavigationView.enableItemShiftingMode(false);
-//        bottomNavigationView.enableShiftingMode(false);
-//        bottomNavigationView.setTextVisibility(false);
-    }
 
-    public static void enableNavigation(final Context context, final Activity callingActivity, BottomNavigationView view) {
+    public static void enableNavigation(final Context context,  BottomNavigationView view) {
         view.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
