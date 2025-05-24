@@ -9,7 +9,6 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.instagram.Home_activity;
 import com.example.instagram.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,7 +19,8 @@ public class Upload_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.uploadactivity);
+        setContentView(R.layout.activity_upload);
+        setupBottomNavigationView();
     }
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");

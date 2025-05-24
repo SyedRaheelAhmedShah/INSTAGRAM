@@ -50,11 +50,11 @@ public class Home_activity extends AppCompatActivity {
     // swipe up on fragment on home activity thats are Home, Camera, Chats
     private void setUpViewPager() {
         TabSectionViewPagerFragment adapter = new TabSectionViewPagerFragment(getSupportFragmentManager());
-//        adapter.addFragmentOntabbar(new Camera_Fragment());
-//        adapter.addFragmentOntabbar(new Home_Fragment());
-//        adapter.addFragmentOntabbar(new Chats_Fragment());
-//        ViewPager viewPager = findViewById(R.id.midlescreencontainerViewpager);
-//        viewPager.setAdapter(adapter);
+        adapter.addFragmentOntabbar(new Camera_Fragment());
+        adapter.addFragmentOntabbar(new Home_Fragment());
+        adapter.addFragmentOntabbar(new Chats_Fragment());
+        ViewPager viewPager = findViewById(R.id.midlescreencontainerViewpager);
+        viewPager.setAdapter(adapter);
 //        TabLayout tabLayout = findViewById(R.id.tablayoutHomeActivity);
 //        tabLayout.setupWithViewPager(viewPager);
 //        tabLayout.getTabAt(0).setIcon(R.drawable.home);

@@ -11,9 +11,9 @@ import java.util.List;
 import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Chats_Fragment;
 import ApplicationAllActivities.Instagram.Home.FragmentsForHomePage.Home_Fragment;
 
-public class ViewPager_Chats_Fragment_Adapter extends FragmentPagerAdapter {
+public class ViewPager_sectio_Cha_camer_Fragment_Adapter extends FragmentPagerAdapter {
 private List<Fragment> mFragmentList=new ArrayList<>();
-    public ViewPager_Chats_Fragment_Adapter(@NonNull FragmentManager fm) {
+    public ViewPager_sectio_Cha_camer_Fragment_Adapter(@NonNull FragmentManager fm) {
         super(fm);
     }
     @NonNull

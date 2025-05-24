@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:id="@+id/relalayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--************* profile setting toolbar ************-->
+        <RelativeLayout
+            android:id="@+id/relalayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/snipped_profile_setting_toolbar" />
+        </RelativeLayout>
+
+        <!--************* profile setting midle screen ************-->
+        <RelativeLayout
+            android:id="@+id/relalayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relalayout2"
+            android:layout_marginBottom="?actionBarSize">
+
+            <include
+                layout="@layout/snipped_user_profile_setting_midle_screen"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

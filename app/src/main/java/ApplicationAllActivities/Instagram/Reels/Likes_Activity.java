@@ -9,19 +9,19 @@ import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.instagram.Home_activity;
 import com.example.instagram.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import Util.BottomNavigationViewHelper;
 
 public class Likes_Activity extends AppCompatActivity {
-    private static final int ACTIVITY_NUM=4;
+    private static final int ACTIVITY_NUM=3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.likeactivity);
+        setContentView(R.layout.activity_likes);
+        setupBottomNavigationView();
 
     }
     private void setupBottomNavigationView(){

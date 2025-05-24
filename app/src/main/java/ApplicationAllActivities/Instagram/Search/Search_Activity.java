@@ -20,7 +20,8 @@ public class Search_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.searchactivity);
+        setContentView(R.layout.activity_search);
+        setupBottomNavigationView();
     }
     private void setupBottomNavigationView(){
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNavigationView");
